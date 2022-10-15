@@ -25,8 +25,12 @@ public class que1 extends Application {
 	public void start(Stage stage) throws Exception {
 		TextField tf;
 		Label response= new Label("status:");
+		Label display= new Label("status:");
 		FlowPane root=new FlowPane(20,20);
-		Scene scene=new Scene(root,230,240,Color.RED);
+		FlowPane root1=new FlowPane(20,20);
+		root1.setAlignment(Pos.CENTER);
+		Scene scene1=new Scene(root,230,240,Color.RED);
+		Scene scene2=new Scene(root1,230,240,Color.RED);
 		stage.setTitle("Login Page");
 
 		root.setAlignment(Pos.CENTER);
@@ -46,30 +50,24 @@ public class que1 extends Application {
 
 		bt.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent ae) {
-				if(tf.getText().equals("vaibhavi") & password.getText().equals("vp123")) {
-					response.setText("successful");
+				if(tf.getText().equals("vaibhavi") && password.getText().equals("vp123")) {
+					response.setText("Welcome");
+					stage.setScene(scene2);
+					root1.getChildren().add(response);
 				}
 				else {
-					response.setText("wrong username or password");
+					display.setText("wrong username or password");
 				}
-				
 				if(tf.getText().isEmpty() && password.getText().isEmpty()) {
 					response.setText("Enter username and password");
 				}
-
 			}
 		});
-
 		Separator separator = new Separator();
 		separator.setPrefWidth(180);
 
-		root.getChildren().addAll(text1,tf,text2,password,bt,separator,response);
-		stage.setScene(scene);
+		root.getChildren().addAll(text1,tf,text2,password,bt,separator,display);
+		stage.setScene(scene1);
 		stage.show();
 	}
-
-
 }
-
-
-
