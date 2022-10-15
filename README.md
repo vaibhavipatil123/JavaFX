@@ -10,6 +10,7 @@ Write a Java program to build the GUI application using JavaFX for the following
  
  c) If user name and password don’t match, then raise appropriate exception
  
+ 
 **que2.java**
  
 Write a Java program to build the GUI application using JavaFX for the following requirements:
@@ -20,6 +21,7 @@ b) Create sub menus in the order: File → New, Open & Save. Edit → Cut, Copy 
 
 The program must use Mnemonics and Accelerators (wherever appropriate) to Menu Items.
 
+
 **que3.java**
 
 Write a Java program to build the GUI application using JavaFX for the following requirements:
@@ -29,6 +31,7 @@ a) Create Context menu involving the menu items in the order: New & View.
 b) Create sub menus for the above main context menu: New → File, Folder & Image. View → Large, Medium & Small.
 
 The context menu must be displayed on right-click of the mouse button.
+
 
 **que4.java**
 
