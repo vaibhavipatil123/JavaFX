@@ -24,7 +24,7 @@ public class que1 extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		TextField tf;
-		Label response= new Label("status:");
+		Label response= new Label();
 		Label display= new Label("status:");
 		FlowPane root=new FlowPane(20,20);
 		FlowPane root1=new FlowPane(20,20);
@@ -59,7 +59,7 @@ public class que1 extends Application {
 					display.setText("wrong username or password");
 				}
 				if(tf.getText().isEmpty() && password.getText().isEmpty()) {
-					response.setText("Enter username and password");
+					display.setText("Enter username and password");
 				}
 			}
 		});
