@@ -24,6 +24,7 @@ Write a JavaFX program that produces the following output when executed and disp
 ![image](https://user-images.githubusercontent.com/105306254/195974969-86c1cfa1-7540-475a-a7dd-24cb2f1af32c.png)
 
 figure1
+
 ![image](https://user-images.githubusercontent.com/105306254/195974978-94246df2-2a92-4f5e-812f-15e45e21367e.png)
 
 
